@@ -26,7 +26,7 @@ function Contact() {
 
         try {
             console.log("Yuborilayotgan payload:", payload); // 🔥 Debugging
-            const res = await fetch("http://localhost:5000/send-message", {
+            const res = await fetch("https://your-backend.onrender.com/send-message", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),
